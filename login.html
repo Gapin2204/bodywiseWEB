@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BODYWISE — Masuk</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bodywise-theme.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="auth-body">
+  <div class="auth-layout">
+    <section class="auth-brand-side">
+      <a class="brand brand-white" href="index.html"><span class="logo-box">B</span><span>BODY<span class="yellow">WISE</span></span></a>
+      <div class="auth-message"><span class="eyebrow light">SELAMAT DATANG KEMBALI</span><h1>Kebiasaan kecil.<br><span>Perubahan besar.</span></h1><p>Kelola perjalanan kesehatanmu dengan cara yang lebih sederhana dan personal.</p></div>
+      <div class="auth-quote">“Konsistensi dibangun sedikit demi sedikit.”</div>
+    </section>
+
+    <section class="auth-form-side">
+      <div class="auth-form-wrap">
+        <a class="back-link" href="index.html">← Kembali ke beranda</a>
+        <div class="auth-heading"><span class="eyebrow">SELAMAT DATANG DI BODYWISE</span><h2>Masuk ke akunmu</h2><p>Lanjutkan perjalanan sehatmu dengan kebiasaan yang lebih baik.</p></div>
+
+        <form id="loginForm" novalidate>
+          <label>Email<input id="email" type="email" placeholder="nama@email.com" autocomplete="email" aria-describedby="emailError"></label>
+          <span class="field-error" id="emailError" aria-live="polite"></span>
+          <label>Password<div class="password-wrap"><input id="password" type="password" placeholder="Minimal 8 karakter" autocomplete="current-password" aria-describedby="passwordError"><button type="button" id="togglePassword">Lihat</button></div></label>
+          <span class="field-error" id="passwordError" aria-live="polite"></span>
+          <button class="btn auth-btn" type="submit">Masuk <span>→</span></button>
+        </form>
+
+        <p class="signup-text">Belum punya akun? <a href="register.html">Daftar sekarang</a></p>
+      </div>
+    </section>
+  </div>
+  <div class="toast" id="toast"></div>
+  <script src="js/main.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

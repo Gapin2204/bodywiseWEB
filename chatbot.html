@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BODYWISE — Asisten</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bodywise-theme.css" />
+    <link rel="stylesheet" href="css/chatbot.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body class="app-page">
+    <div class="app-layout">
+      <aside class="sidebar">
+        <a class="brand sidebar-brand" href="dashboard.html"><span class="logo-box">B</span><span>BODY<span class="green">WISE</span></span></a>
+        <div class="side-label">MENU</div>
+        <nav class="side-nav" aria-label="Navigasi utama"></nav>
+        <div class="side-bottom"><a href="index.html"><span>↪</span> Keluar</a></div>
+      </aside>
+      <main class="app-content chatbot-content">
+        <header class="page-header">
+          <div><span class="eyebrow">ASISTEN BODYWISE</span><h1>Tanya dengan nyaman.</h1><p>Bantuan fitur BODYWISE, nutrisi, olahraga, dan kebiasaan sehat umum.</p></div>
+        </header>
+        <div class="chatbot-layout">
+          <aside class="section-card conversation-panel">
+            <div class="section-title"><h2>Percakapan</h2><button class="outline-btn" id="newConversation" type="button">Baru</button></div>
+            <div id="conversationList" class="conversation-list"></div>
+          </aside>
+          <section class="section-card chat-panel" aria-label="Percakapan dengan asisten BODYWISE">
+            <div class="chat-safety-note">Asisten menggunakan aturan lokal, bukan AI eksternal. Tidak memberi diagnosis atau saran medis berisiko.</div>
+            <div id="chatMessages" class="chat-messages" aria-live="polite"></div>
+            <form id="chatForm" class="chat-form">
+              <label class="visually-hidden" for="chatMessage">Pesan</label>
+              <textarea id="chatMessage" name="message" maxlength="1000" placeholder="Tulis pertanyaanmu..." required></textarea>
+              <button class="btn" type="submit">Kirim <span aria-hidden="true">→</span></button>
+            </form>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script src="js/api.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>

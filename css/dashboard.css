@@ -1,0 +1,400 @@
+.app-page .app-content {
+  min-width: 0;
+}
+
+.app-page .page-header {
+  align-items: center;
+  gap: 20px;
+}
+
+.app-page .page-header h1,
+.app-page .today-banner h2,
+.app-page .dashboard-card h2 {
+  letter-spacing: 0;
+}
+
+.app-page .page-header p,
+.app-page .today-banner p {
+  line-height: 1.65;
+}
+
+.dash-header-actions {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 9px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  min-height: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 13px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--white);
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.theme-toggle:hover {
+  border-color: var(--green);
+}
+
+.theme-toggle-icon {
+  color: var(--green);
+  font-size: 16px;
+}
+
+.notification-btn {
+  min-height: 40px;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 11px;
+}
+
+.notification-btn > span:first-child {
+  color: var(--yellow);
+}
+
+.app-page .stat-card,
+.app-page .dashboard-card {
+  min-width: 0;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(18, 63, 40, 0.045);
+}
+
+.app-page .stat-card {
+  padding: 18px;
+}
+
+.app-page .stats-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.app-page .dashboard-card {
+  padding: 20px;
+}
+
+.app-page .stat-card > strong {
+  letter-spacing: 0;
+}
+
+.app-page .dashboard-card h2 {
+  line-height: 1.3;
+}
+
+.app-page .today-banner {
+  gap: 20px;
+  border-radius: 14px;
+}
+
+.app-page .exercise-list > div {
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  gap: 8px;
+}
+
+.app-page .exercise-list > .empty-workout {
+  display: block;
+  padding: 14px 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.app-page[data-theme="dark"] {
+  --green: #70bd86;
+  --green-dark: #173a26;
+  --green-2: #83ce96;
+  --green-light: #263b2e;
+  --yellow: #f5c542;
+  --yellow-light: #3c3520;
+  --text: #e8efe9;
+  --muted: #a7b4aa;
+  --line: #34453a;
+  --bg: #111b15;
+  --white: #1a2820;
+  --shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+  color-scheme: dark;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.app-page[data-theme="dark"] .sidebar,
+.app-page[data-theme="dark"] .stat-card,
+.app-page[data-theme="dark"] .dashboard-card,
+.app-page[data-theme="dark"] .theme-toggle {
+  border-color: var(--line);
+  background-color: var(--white);
+  color: var(--text);
+}
+
+.app-page[data-theme="dark"] .sidebar-brand {
+  color: var(--text);
+}
+
+.app-page[data-theme="dark"] .notification-btn {
+  border: 1px solid var(--line);
+  background: var(--green-dark);
+  color: var(--text);
+}
+
+.app-page[data-theme="dark"] .yellow-bg {
+  color: var(--yellow) !important;
+}
+
+.app-page[data-theme="dark"] .tag {
+  color: var(--yellow);
+}
+
+.app-page[data-theme="dark"] .side-nav a,
+.app-page[data-theme="dark"] .side-bottom a {
+  color: var(--muted);
+}
+
+.app-page[data-theme="dark"] .side-nav a.active,
+.app-page[data-theme="dark"] .side-nav a:hover,
+.app-page[data-theme="dark"] .side-bottom a:hover {
+  background: var(--green-light);
+  color: var(--green);
+}
+
+.app-page[data-theme="dark"] .today-banner {
+  background: var(--green-dark);
+}
+
+.app-page[data-theme="dark"] .metric {
+  border-color: var(--line);
+  background: var(--white);
+  color: var(--text);
+}
+
+.app-page[data-theme="dark"] .habit-progress {
+  background: var(--line);
+}
+
+.app-page[data-theme="dark"] .green-metric {
+  background: var(--green-light);
+}
+
+.app-page[data-theme="dark"] .yellow-metric {
+  background: var(--yellow-light);
+}
+
+.app-page[data-theme="dark"] .stat-top > span:first-child,
+.app-page[data-theme="dark"] .stat-card small,
+.app-page[data-theme="dark"] .stat-card em,
+.app-page[data-theme="dark"] .exercise-list span,
+.app-page[data-theme="dark"] .habit i {
+  color: var(--muted);
+}
+
+.app-page[data-theme="dark"] .habit.done i {
+  color: var(--green);
+}
+
+.app-page[data-theme="dark"] .theme-toggle-icon {
+  color: var(--yellow);
+}
+
+@media (max-width: 700px) {
+  .app-page .app-layout {
+    display: block;
+  }
+
+  .app-page .sidebar {
+    position: sticky;
+    z-index: 30;
+    top: 0;
+    bottom: auto;
+    left: auto;
+    display: grid;
+    width: 100%;
+    height: auto;
+    gap: 9px;
+    padding: 10px 14px 8px;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+    background: var(--white);
+  }
+
+  .app-page .sidebar .brand > span:last-child {
+    display: inline;
+  }
+
+  .app-page .sidebar-brand {
+    padding: 0 2px;
+    font-size: 17px;
+  }
+
+  .app-page .side-label {
+    display: none;
+  }
+
+  .app-page .side-nav {
+    flex-direction: row;
+    gap: 5px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+    scrollbar-width: none;
+  }
+
+  .app-page .side-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .app-page .side-nav a {
+    flex: 0 0 auto;
+    gap: 7px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 10px;
+    white-space: nowrap;
+  }
+
+  .app-page .side-bottom {
+    display: flex;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .app-page .sidebar .side-bottom a {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 7px;
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+
+  .app-page .app-content {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 78px 16px 32px;
+  }
+
+  .app-page .page-header {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 13px;
+    margin-bottom: 18px;
+  }
+
+  .app-page .page-header h1 {
+    font-size: 25px;
+    line-height: 1.25;
+  }
+
+  .app-page .page-header p,
+  .app-page .today-banner p {
+    font-size: 12px;
+  }
+
+  .dash-header-actions {
+    flex-wrap: wrap;
+  }
+
+  .app-page .today-banner {
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .app-page .today-banner h2 {
+    max-width: 28ch;
+    font-size: 19px;
+    line-height: 1.3;
+  }
+
+  .app-page .circle-progress {
+    flex: 0 0 62px;
+    width: 62px;
+    height: 62px;
+    border-width: 6px;
+  }
+
+  .app-page .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+
+  .app-page .stat-card {
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .app-page .stat-card > strong {
+    margin: 15px 0 4px;
+    font-size: 22px;
+  }
+
+  .app-page .stat-top > span:first-child {
+    font-size: 8px;
+  }
+
+  .app-page .stat-card small {
+    font-size: 9px;
+    line-height: 1.45;
+  }
+
+  .app-page .stat-card a {
+    margin-top: 9px;
+    font-size: 9px;
+  }
+
+  .app-page .dash-grid {
+    grid-template-columns: 1fr;
+    gap: 11px;
+  }
+
+  .app-page .dashboard-card {
+    padding: 17px;
+    border-radius: 12px;
+  }
+
+  .app-page .dashboard-card h2 {
+    font-size: 17px;
+  }
+
+  .app-page .macro-labels {
+    flex-wrap: wrap;
+    gap: 7px 12px;
+    font-size: 9px;
+  }
+
+  .app-page .exercise-list > div {
+    grid-template-columns: 24px minmax(0, 1fr) auto;
+    gap: 7px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .app-page .app-content {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .app-page .today-banner {
+    padding: 16px;
+  }
+
+  .app-page .stat-card {
+    padding: 12px;
+  }
+
+  .app-page .theme-toggle,
+  .app-page .notification-btn {
+    padding-right: 10px;
+    padding-left: 10px;
+    font-size: 10px;
+  }
+}

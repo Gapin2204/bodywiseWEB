@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BODYWISE — Atur Tujuan</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bodywise-theme.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body class="app-page goal-page">
+  <div class="app-layout">
+    <aside class="sidebar">
+      <a class="brand sidebar-brand" href="dashboard.html" aria-label="BODYWISE, dashboard"><span class="logo-box">B</span><span>BODY<span class="green">WISE</span></span></a>
+      <div class="side-label">MENU</div>
+      <nav class="side-nav" aria-label="Navigasi utama">
+        <a href="dashboard.html"><span>⌂</span> Dashboard</a>
+        <a href="assessment.html"><span>◒</span> Asesmen</a>
+        <a href="goal.html" class="active" aria-current="page"><span>◎</span> Tujuan</a>
+        <a href="nutrition.html"><span>⌁</span> Nutrisi</a>
+        <a href="workout.html"><span>♧</span> Latihan</a>
+      </nav>
+      <div class="side-bottom"><a href="index.html"><span>↪</span> Keluar</a></div>
+    </aside>
+    <main class="app-content">
+      <div class="goal-content">
+        <header class="goal-intro">
+          <span class="eyebrow">LANGKAH 2 DARI 3</span>
+          <h1>Tentukan tujuanmu.</h1>
+          <p>Pilih arah yang realistis untuk 12 minggu ke depan. Tujuan dapat disesuaikan kapan saja.</p>
+        </header>
+        <form id="goalForm">
+          <section class="section-card">
+            <div class="section-title"><h2>Fokus utama</h2><p>Pilih satu tujuan</p></div>
+            <div class="goal-options">
+              <label class="goal-option"><input type="radio" name="goal" value="lose" required><b>Turunkan berat badan</b><small>Bangun defisit energi secara bertahap.</small></label>
+              <label class="goal-option"><input type="radio" name="goal" value="maintain"><b>Pertahankan berat</b><small>Jaga rutinitas dan kondisi saat ini.</small></label>
+              <label class="goal-option"><input type="radio" name="goal" value="gain"><b>Tingkatkan massa</b><small>Dukung kenaikan berat secara bertahap.</small></label>
+            </div>
+            <div class="goal-form-grid">
+              <label for="targetWeight">Target berat badan (kg)<input id="targetWeight" name="targetWeight" type="number" min="30" max="300" step="0.1" required></label>
+              <label for="goalDuration">Durasi target<select id="goalDuration" name="goalDuration"><option value="8">8 minggu</option><option value="12" selected>12 minggu</option><option value="16">16 minggu</option></select></label>
+            </div>
+            <p class="goal-note" style="margin-top:16px">Target adalah perkiraan untuk membantu perencanaan, bukan pengganti saran tenaga kesehatan.</p>
+            <div class="goal-actions"><a class="outline-btn" href="assessment.html">Kembali ke asesmen</a><button class="btn" type="submit">Simpan tujuan <span>→</span></button></div>
+          </section>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <div class="goal-success" id="goalSuccess" role="dialog" aria-modal="true" aria-labelledby="successTitle" hidden>
+    <section class="goal-success-panel">
+      <div class="goal-success-check" aria-hidden="true">✓</div>
+      <span class="eyebrow">BERHASIL DISIMPAN</span>
+      <h2 id="successTitle">Tujuanmu sudah tercatat.</h2>
+      <p id="successSummary"></p>
+      <div class="goal-success-actions">
+        <a class="btn" href="nutrition.html">Lihat rekomendasi nutrisi <span>→</span></a>
+        <a class="outline-btn" href="workout.html">Lihat program latihan</a>
+      </div>
+    </section>
+  </div>
+  <script src="js/api.js"></script>
+  <script src="js/goal.js"></script>
+  <script src="js/navigation.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BODYWISE — Buat Akun</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/bodywise-theme.css" />
+		<link rel="stylesheet" href="css/register.css" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+	</head>
+	<body class="auth-body register-page">
+		<header class="register-topbar">
+			<a class="brand" href="index.html" aria-label="BODYWISE, beranda">
+				<span class="logo-box">B</span><span>BODY<span class="green">WISE</span></span>
+			</a>
+			<p>Sudah punya akun? <a href="login.html">Masuk</a></p>
+		</header>
+
+		<main class="register-layout">
+			<section class="register-form-panel" aria-labelledby="registerTitle">
+				<a class="register-back" href="index.html"><span aria-hidden="true">←</span> Kembali ke beranda</a>
+				<div class="register-heading">
+					<span class="register-kicker"><span></span> MULAI DARI DIRIMU</span>
+					<h1 id="registerTitle">Buat ruang untuk<br /><span>versi sehatmu.</span></h1>
+					<p>Atur langkah awal yang terasa realistis. Kamu bisa mengubah fokus kapan saja.</p>
+				</div>
+
+				<form id="registerForm" novalidate>
+					<div class="register-fields">
+						<label class="register-field register-field-wide" for="fullName">
+							<span>Nama panggilan</span>
+						<input id="fullName" name="fullName" type="text" placeholder="Nama yang ingin kami gunakan" autocomplete="name" aria-describedby="fullNameError" required />
+							<small class="register-error" id="fullNameError" aria-live="polite"></small>
+						</label>
+						<label class="register-field register-field-wide" for="registerEmail">
+							<span>Email</span>
+							<input id="registerEmail" name="email" type="email" placeholder="nama@email.com" autocomplete="email" aria-describedby="registerEmailError" required />
+							<small class="register-error" id="registerEmailError" aria-live="polite"></small>
+						</label>
+						<label class="register-field register-field-wide" for="healthFocus">
+							<span>Fokus kesehatan</span>
+							<select id="healthFocus" name="healthFocus" required>
+								<option value="" disabled selected>Pilih fokus yang paling sesuai</option>
+								<option value="energy">Merasa lebih bertenaga</option>
+								<option value="weight">Mengelola berat badan</option>
+								<option value="strength">Membangun kekuatan</option>
+								<option value="consistency">Menjaga konsistensi</option>
+							</select>
+							<small class="register-error" id="healthFocusError" aria-live="polite"></small>
+						</label>
+						<label class="register-field" for="registerPassword">
+							<span>Password</span>
+							<span class="register-password-wrap">
+								<input id="registerPassword" name="password" type="password" placeholder="Minimal 8 karakter" autocomplete="new-password" aria-describedby="passwordError" required />
+								<button type="button" class="password-toggle" data-password-target="registerPassword" aria-label="Tampilkan password">Lihat</button>
+							</span>
+							<small class="register-error" id="passwordError" aria-live="polite"></small>
+						</label>
+						<label class="register-field" for="confirmPassword">
+							<span>Konfirmasi password</span>
+							<span class="register-password-wrap">
+								<input id="confirmPassword" name="confirmPassword" type="password" placeholder="Ketik ulang password" autocomplete="new-password" aria-describedby="confirmPasswordError" required />
+								<button type="button" class="password-toggle" data-password-target="confirmPassword" aria-label="Tampilkan konfirmasi password">Lihat</button>
+							</span>
+							<small class="register-error" id="confirmPasswordError" aria-live="polite"></small>
+						</label>
+					</div>
+
+					<label class="register-consent" for="registerConsent">
+						<input id="registerConsent" name="consent" type="checkbox" required />
+						<span>Saya setuju menggunakan BODYWISE untuk mengelola rutinitas kesehatan saya.</span>
+					</label>
+					<small class="register-error consent-error" id="consentError" aria-live="polite"></small>
+					<button class="register-submit" type="submit">Buat akun <span aria-hidden="true">→</span></button>
+					<p class="register-status" id="registerStatus" role="status" aria-live="polite"></p>
+				</form>
+			</section>
+
+			<aside class="register-art-panel" aria-label="Mulai perjalanan kesehatanmu">
+				<img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1100&q=82" alt="Ruang latihan yang terang dan siap digunakan" />
+				<div class="register-art-overlay"></div>
+				<div class="register-art-top"><span>01 / PERJALANANMU</span><span aria-hidden="true">✳</span></div>
+				<div class="register-art-copy">
+					<span>SEHAT DENGAN RITMEMU</span>
+					<h2>Yang penting,<br />terus bergerak.</h2>
+					<p>Rutinitas yang baik tumbuh dari langkah kecil yang bisa kamu ulangi.</p>
+				</div>
+				<div class="register-art-footer"><span>BODYWISE</span><span>Kenali. Rawat. Bertumbuh.</span></div>
+			</aside>
+		</main>
+
+		<script src="js/main.js"></script>
+		<script src="js/api.js"></script>
+		<script src="js/register.js"></script>
+	</body>
+</html>

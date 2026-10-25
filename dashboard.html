@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BODYWISE — Beranda</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/bodywise-theme.css" />
+		<link rel="stylesheet" href="css/dashboard.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="app-page">
+		<div class="app-layout">
+			<aside class="sidebar">
+				<a class="brand sidebar-brand" href="dashboard.html" aria-label="BODYWISE, beranda">
+					<span class="logo-box">B</span>
+					<span>BODY<span class="green">WISE</span></span>
+				</a>
+				<div class="side-label">MENU</div>
+				<nav class="side-nav" aria-label="Navigasi dashboard">
+					<a href="dashboard.html" class="active"><span>⌂</span> Beranda</a>
+					<a href="assessment.html"><span>◒</span> Asesmen</a>
+					<a href="nutrition.html"><span>⌁</span> Nutrisi</a>
+					<a href="workout.html"><span>♧</span> Latihan</a>
+					<a href="progress.html"><span>↗</span> Progres</a>
+				</nav>
+				<div class="side-bottom">
+					<a href="index.html"><span>↪</span> Keluar</a>
+				</div>
+			</aside>
+
+			<main class="app-content">
+				<header class="page-header dash-header">
+					<div>
+						<span class="eyebrow" id="dashboardDate"></span>
+						<h1 id="dashboardGreeting">Selamat datang.</h1>
+						<p>Ringkasan kesehatanmu untuk hari ini.</p>
+					</div>
+				</header>
+
+				<section class="today-banner" aria-label="Ringkasan hari ini">
+					<div>
+						<span class="eyebrow light">RINGKASAN HARI INI</span>
+						<h2>Rawat dirimu, satu langkah sekaligus.</h2>
+						<p>Lihat rutinitas, nutrisi, latihan, dan progresmu dalam satu tempat.</p>
+					</div>
+					<div class="circle-progress" aria-label="Progres harian 75 persen">
+						<strong>—%</strong><span>harian</span>
+					</div>
+				</section>
+
+				<section class="stats-grid" aria-label="Statistik kesehatan">
+					<article class="stat-card">
+						<div class="stat-top"><span>BERAT BADAN</span><span class="stat-icon">↕</span></div>
+						<strong>— kg</strong><small>Belum ada catatan</small>
+						<a href="progress.html">Perbarui <span aria-hidden="true">→</span></a>
+					</article>
+					<article class="stat-card">
+						<div class="stat-top"><span>KALORI</span><span class="stat-icon yellow-bg">◉</span></div>
+						<strong>— kkal</strong><small>Belum ada catatan</small>
+						<a href="nutrition.html">Lihat nutrisi <span aria-hidden="true">→</span></a>
+					</article>
+				</section>
+
+				<section class="dash-grid" aria-label="Rangkuman rutinitas">
+					<article class="dashboard-card">
+						<div class="card-heading-row">
+							<div><span class="eyebrow">KEBIASAAN HARI INI</span><h2>Daftar rutinitas</h2></div>
+							<span class="tag green-tag">3/4</span>
+						</div>
+						<label class="habit"><input type="checkbox" /><span><b>Minum air yang cukup</b><small>Target kebiasaan pribadi</small></span><i>○</i></label>
+						<label class="habit"><input type="checkbox" /><span><b>Selesaikan latihan</b><small>Catat sesi latihan</small></span><i>○</i></label>
+						<label class="habit"><input type="checkbox" /><span><b>Catat makanan</b><small>Masukkan menu hari ini</small></span><i>○</i></label>
+						<label class="habit"><input type="checkbox" /><span><b>Tidur sesuai jadwal</b><small>Target 7–9 jam</small></span><i>○</i></label>
+					</article>
+
+					<article class="dashboard-card">
+						<div class="card-heading-row">
+							<div><span class="eyebrow">NUTRISI</span><h2>Asupan hari ini</h2></div>
+							<a href="nutrition.html">Lihat semua <span aria-hidden="true">→</span></a>
+						</div>
+						<div class="metric green-metric">
+							<span class="metric-label">KALORI</span>
+							<strong>— <small>target belum tersedia</small></strong>
+							<div class="habit-progress"><i style="width: 0%"></i></div>
+						</div>
+						<div class="macro-labels"><span>Protein — g</span><span>Karbo — g</span><span>Lemak — g</span></div>
+					</article>
+
+					<article class="dashboard-card">
+						<div class="card-heading-row">
+							<div><span class="eyebrow">LATIHAN</span><h2>Rencana hari ini</h2></div>
+							<span class="tag">Belum dicatat</span>
+						</div>
+						<div class="exercise-list"><div class="empty-workout">Belum ada sesi latihan hari ini.</div></div>
+						<a class="btn full-btn" href="workout.html">Buka latihan <span>→</span></a>
+					</article>
+
+					<article class="dashboard-card">
+						<div class="card-heading-row">
+							<div><span class="eyebrow">TUJUAN</span><h2>Target aktif</h2></div>
+							<a href="goal.html">Kelola <span aria-hidden="true">→</span></a>
+						</div>
+						<div class="reminder"><div><b>Belum ada target aktif</b></div></div>
+					</article>
+				</section>
+			</main>
+		</div>
+		<script src="js/api.js"></script>
+		<script src="js/dashboard.js"></script>
+		<script src="js/navigation.js"></script>
+	</body>
+</html>

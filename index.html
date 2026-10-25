@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BODYWISE — Kebiasaan Sehat</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bodywise-theme.css" />
+    <link rel="stylesheet" href="css/landing.css" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="landing-page">
+    <header class="navbar landing-nav">
+      <a class="brand" href="index.html" aria-label="BODYWISE, beranda">
+        <span class="logo-box">B</span>
+        <span>BODY<span class="green">WISE</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Navigasi utama">
+        <a href="#features">Fitur</a>
+        <a href="#how">Cara kerja</a>
+        <a href="#about">Tentang</a>
+        <button class="landing-theme-toggle" type="button" aria-pressed="false">
+          <span class="landing-theme-icon" aria-hidden="true">◐</span>
+          <span class="landing-theme-label">Mode gelap</span>
+        </button>
+      </nav>
+      <div class="nav-actions">
+        <a class="login-link" href="login.html">Masuk</a>
+        <a class="btn btn-small" href="login.html">Mulai sekarang <span>→</span></a>
+      </div>
+    </header>
+    <main>
+      <section class="hero landing-hero">
+        <div class="hero-copy reveal">
+          <div class="pill"><span>✦</span> Kesehatan yang terasa personal</div>
+          <h1>Kenali tubuhmu.<br /><span>Rawat dirimu.</span></h1>
+          <p>
+            Mulai dari memahami kebutuhan tubuh, lalu bangun rutinitas sehat
+            yang realistis untuk dijalani setiap hari.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="login.html">Mulai perjalanan <span>→</span></a>
+            <a class="text-btn" href="#features">Lihat fitur <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-points" aria-label="Fokus BODYWISE">
+            <span><b>01</b> Pahami kondisi</span>
+            <span><b>02</b> Tentukan tujuan</span>
+            <span><b>03</b> Jaga konsistensi</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal">
+          <figure class="hero-photo">
+            <img
+              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=880&q=82"
+              srcset="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=480&q=78 480w, https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=880&q=82 880w, https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=84 1200w"
+              sizes="(max-width: 650px) 90vw, (max-width: 900px) 45vw, 46vw"
+              alt="Sesi latihan kebugaran dengan pendamping"
+              fetchpriority="high"
+            />
+            <figcaption>Sehat dimulai dari langkah kecil.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="focus-strip" aria-label="Area kesehatan">
+        <span>KESEHATAN SEHARI-HARI</span>
+        <div><b>Kenali</b><i>•</i><b>Bergerak</b><i>•</i><b>Seimbangkan</b><i>•</i><b>Konsisten</b></div>
+      </section>
+
+      <section id="features" class="section features">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">DUKUNGAN UNTUK KESEHARIANMU</span>
+            <h2>Semua yang penting,<br /><span>lebih mudah dijalani.</span></h2>
+          </div>
+          <p>Alat sederhana untuk membuat pilihan sehat terasa lebih terarah dan sesuai dengan kebutuhanmu.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card green-card">
+            <span class="feature-icon">◒</span>
+            <span class="feature-kicker">MULAI DARI DIRI SENDIRI</span>
+            <h3>Kenali kondisimu</h3>
+            <p>Pahami BMI, kebutuhan energi, dan titik awal yang sesuai untukmu.</p>
+            <a href="assessment.html">Lihat asesmen <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon yellow-icon">◎</span>
+            <span class="feature-kicker">GERAK DENGAN TUJUAN</span>
+            <h3>Latihan lebih terarah</h3>
+            <p>Pilih aktivitas dan program latihan yang selaras dengan tujuanmu.</p>
+            <a href="workout.html">Jelajahi workout <span aria-hidden="true">→</span></a>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">⌁</span>
+            <span class="feature-kicker">LANGKAH KECIL SETIAP HARI</span>
+            <h3>Bangun kebiasaan sehat</h3>
+            <p>Pantau latihan, asupan, dan rutinitas sehatmu dari satu tempat.</p>
+            <a href="dashboard.html">Lihat dashboard <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </section>
+      <section id="how" class="section how">
+        <div class="section-heading centered">
+          <span class="eyebrow">LANGKAH YANG JELAS</span>
+          <h2>Mulai sederhana. Terus bertumbuh.</h2>
+          <p>
+            Tidak perlu mengubah semuanya sekaligus. Pilih langkah yang bisa kamu jaga.
+          </p>
+        </div>
+        <div class="steps">
+          <article>
+            <div class="step-label">
+                <span>01</span><span class="step-emoji">◒</span>
+            </div>
+            <h3>Pahami kebutuhanmu</h3>
+            <p>Mulai dengan asesmen singkat tentang kondisi tubuh dan tujuanmu.</p>
+          </article>
+          <article>
+            <div class="step-label">
+                <span>02</span><span class="step-emoji">◎</span>
+            </div>
+            <h3>Tentukan arah</h3>
+            <p>Pilih fokus yang terasa tepat: menjaga, menurunkan, atau menaikkan berat badan.</p>
+          </article>
+          <article>
+            <div class="step-label">
+                <span>03</span><span class="step-emoji">↗</span>
+            </div>
+            <h3>Jalani dengan konsisten</h3>
+            <p>Gunakan pencatatan dan pengingat untuk merawat progresmu setiap hari.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="cta-section">
+        <div>
+          <span class="eyebrow light">BODYWISE</span>
+          <h2>Mulai dari yang bisa kamu lakukan hari ini.</h2>
+          <p>Kenali tubuhmu dan bangun rutinitas sehat dengan ritmemu sendiri.</p>
+        </div>
+        <a class="btn yellow-btn" href="login.html">Buat rutinitasmu <span>→</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <span>© 2026 BODYWISE</span>
+      <span>Kenali tubuhmu. Bangun kebiasaan yang lebih baik.</span>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/landing.js"></script>
+  </body>
+</html>

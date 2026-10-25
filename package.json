@@ -1,0 +1,9 @@
+{
+  "name": "bodywise-frontend-v3",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm --prefix backend start",
+    "test": "npm --prefix backend test"
+  }
+}
